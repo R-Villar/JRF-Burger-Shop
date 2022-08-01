@@ -1,4 +1,4 @@
-const Burgers = [
+{"Burgers": [
     {
       "id": 0,
       "name": "Tribute Burger",
@@ -288,5 +288,4 @@ const Burgers = [
       ]
     }
   ]
-
-  export default Burgers
+}
