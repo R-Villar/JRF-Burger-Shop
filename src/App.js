@@ -1,15 +1,21 @@
-import { useEffect, useState } from 'react';
 import './App.css';
+import { Route, Switch } from 'react-router-dom';
 import Home from "./Components/Home"
+import NavBar from './Components/NavBar';
 
 function App() {
 
-
-
 return (
     <div className="App">
-      <Home />
-      <h2>hello</h2>
+      <NavBar />
+      <Switch>
+        <Route path="/">
+          <Home />
+        </Route>
+        <Route path="/about">Cart</Route>
+      </Switch>
+
+      
     </div>
   );
 }
