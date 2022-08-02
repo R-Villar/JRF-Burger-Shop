@@ -2,7 +2,6 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
 
-
 function BurgerCard({burger}) {
     const {name, image, description} = burger
 
@@ -14,8 +13,8 @@ function BurgerCard({burger}) {
             <Card.Body>
                 <Card.Title>{name}</Card.Title>
                     <Card.Text>
-                    {description}
-                </Card.Text>
+                        {description}
+                    </Card.Text>
                 <Button variant="primary">Go somewhere</Button>
             </Card.Body>
         </Card>
