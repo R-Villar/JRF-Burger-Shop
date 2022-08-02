@@ -12,10 +12,11 @@ function BurgerCard({burger}) {
             <Card.Img variant="top" src={image} />
             <Card.Body>
                 <Card.Title>{name}</Card.Title>
-                    <Card.Text>
+                    <Card.Text>             
                         {description}
                     </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Button variant="primary" size='sm'>add to cart</Button>{' '}
+                <Button variant="primary" size='sm'>customize</Button>
             </Card.Body>
         </Card>
     )
