@@ -1,10 +1,10 @@
-import Card from "./card";
+import BurgerCard from "./BurgerCard";
 
 function CardContainer({burgersObj}) {
 
     // maps thru the burgersObj and passes prop to Card component.
     const burgerElement = burgersObj.map((burger) => {
-        return  <Card key={burger.id} burger={burger} />
+        return  <BurgerCard key={burger.id} burger={burger} />
     })
 
     return (
