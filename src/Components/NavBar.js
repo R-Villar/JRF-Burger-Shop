@@ -8,6 +8,7 @@ function NavBar() {
         <Navbar bg="dark" variant="dark" sticky="top">
             <Container>
                 <Nav className="me-auto">
+
                     <NavLink to="/">JRF Burger Shop</NavLink> 
                     <NavLink to="/">Home</NavLink>
                     <NavLink to="/cart">Cart</NavLink>
