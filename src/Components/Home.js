@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import CardContainer from "./Cardcontainter";
 
 
-function Home() {
+function Home({newBurger}) {
 
+    console.log(newBurger)
     const [burgersObj, setBurgersObj] = useState([])
 
     // fetch request

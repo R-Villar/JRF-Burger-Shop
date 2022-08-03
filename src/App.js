@@ -7,7 +7,11 @@ import Customize from './Components/Customize';
 
 function App() {
 
-return (
+    const newBurger = obj => {
+      console.log('here')
+    }
+
+  return (
     <div className="App">
       <NavBar />
       <Switch>
@@ -15,10 +19,10 @@ return (
           <Cart />
         </Route>
         <Route path="/customize">
-          <Customize />
+          <Customize newBurger={newBurger}/>
         </Route>
         <Route path="/">
-          <Home />
+          <Home newBurger={newBurger}/>
         </Route>
       </Switch>
 
