@@ -1,6 +1,12 @@
-function Customize () {
+
+function Customize ({selectedBurger}) {
+    console.log(selectedBurger)
+
     return (
-        <div>custom</div>
+        <div>
+            <h1>hello</h1>
+            <div>{selectedBurger.name}</div>
+        </div>
     )
 }
 export default Customize
