@@ -8,12 +8,6 @@ import React, { useEffect, useState } from "react";
 
 function App() {
   const [selectedBurger, setSelectedBurger] = useState({})
-
-
-    const newBurger = obj => {
-      console.log('here')
-    }
-
   const [burgersObj, setBurgersObj] = useState([])
 
     // fetch request
@@ -24,6 +18,11 @@ function App() {
     }, [])
 
 
+    const newBurger = newObj => {
+      setBurgersObj( burgersObj => [...burgersObj, newObj ])
+    }
+  // console.log(burgersObj)
+    
   // adds the lected customized burger to the customize page
   function addCustSelection(addedBurger) {
     setSelectedBurger(addedBurger)
@@ -37,10 +36,12 @@ function App() {
             <Cart addCustSelection={addCustSelection}/>
           </Route>
           <Route path="/customize">
-            <Customize selectedBurger={selectedBurger} />
+            <Customize selectedBurger={selectedBurger} newBurger={newBurger} />
           </Route>
           <Route path="/">
-            <Home addCustSelection={addCustSelection} burgersObj={burgersObj} />
+            <Home addCustSelection={addCustSelection}
+             burgersObj={burgersObj}
+             />
           </Route>
         </Switch>
       </div>
