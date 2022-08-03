@@ -9,6 +9,11 @@ import React, { useEffect, useState } from "react";
 function App() {
   const [selectedBurger, setSelectedBurger] = useState({})
 
+
+    const newBurger = obj => {
+      console.log('here')
+    }
+
   const [burgersObj, setBurgersObj] = useState([])
 
     // fetch request

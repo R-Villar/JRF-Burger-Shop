@@ -1,8 +1,6 @@
 import CardContainer from "./Cardcontainter";
 
-
 function Home({addCustSelection, burgersObj}) {
-    
     
     return (
         <div>
