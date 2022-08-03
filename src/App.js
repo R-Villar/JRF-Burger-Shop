@@ -4,31 +4,47 @@ import Home from "./Components/Home"
 import NavBar from './Components/NavBar';
 import Cart from './Components/Cart';
 import Customize from './Components/Customize';
+import React, { useEffect, useState } from "react";
 
 function App() {
+  const [selectedBurger, setSelectedBurger] = useState({})
+
 
     const newBurger = obj => {
       console.log('here')
     }
 
-  return (
-    <div className="App">
-      <NavBar />
-      <Switch>
-        <Route path="/cart">
-          <Cart />
-        </Route>
-        <Route path="/customize">
-          <Customize newBurger={newBurger}/>
-        </Route>
-        <Route path="/">
-          <Home newBurger={newBurger}/>
-        </Route>
-      </Switch>
+  const [burgersObj, setBurgersObj] = useState([])
 
-      
-    </div>
-  );
+    // fetch request
+    useEffect(() => {
+      fetch('http://localhost:3000/burgers')
+        .then(res => res.json())
+        .then(data => setBurgersObj(data))
+    }, [])
+
+
+  // adds the lected customized burger to the customize page
+  function addCustSelection(addedBurger) {
+    setSelectedBurger(addedBurger)
+  }
+  
+  return (
+      <div className="App">
+        <NavBar />
+        <Switch>
+          <Route path="/cart">
+            <Cart />
+          </Route>
+          <Route path="/customize">
+            <Customize selectedBurger={selectedBurger} />
+          </Route>
+          <Route path="/">
+            <Home addCustSelection={addCustSelection} burgersObj={burgersObj} />
+          </Route>
+        </Switch>
+      </div>
+    );
 }
 
 export default App;

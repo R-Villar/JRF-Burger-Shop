@@ -33,6 +33,14 @@ function Customize ({newBurger}) {
                 <input placeholder="description" onChange={(e) => setDescription(e.target.value)}/>
                 <input type="submit" value="Create"></input>
             </form>
+
+function Customize ({selectedBurger}) {
+    console.log(selectedBurger)
+
+    return (
+        <div>
+            <h1>hello</h1>
+            <div>{selectedBurger.name}</div>
         </div>
     )
 }

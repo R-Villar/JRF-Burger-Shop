@@ -1,23 +1,10 @@
-import React, { useEffect, useState } from "react";
 import CardContainer from "./Cardcontainter";
 
-
-function Home({newBurger}) {
-
-    console.log(newBurger)
-    const [burgersObj, setBurgersObj] = useState([])
-
-    // fetch request
-    useEffect(() => {
-      fetch('http://localhost:3000/burgers')
-        .then(res => res.json())
-        .then(data => setBurgersObj(data))
-    }, [])
-    // console.log(burgersObj)
-
+function Home({addCustSelection, burgersObj}) {
+    
     return (
         <div>
-            <CardContainer burgersObj={burgersObj} />
+            <CardContainer burgersObj={burgersObj} addCustSelection={addCustSelection} />
         </div>
     )
 }

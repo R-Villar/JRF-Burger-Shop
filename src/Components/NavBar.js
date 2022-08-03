@@ -8,13 +8,26 @@ function NavBar() {
         <Navbar bg="dark" variant="dark" sticky="top">
             <Container>
                 <Nav className="me-auto">
-                    <NavLink to="/Customize">Make your own Burger</NavLink>
-                    <NavLink to="/cart">Cart</NavLink>
+
+                    <NavLink to="/">JRF Burger Shop</NavLink> 
                     <NavLink to="/">Home</NavLink>
-                    <NavLink to="/">JRF Burger Shop</NavLink>  
+                    <NavLink to="/cart">Cart</NavLink>
+                    <NavLink to="/customize">Customize</NavLink>
                 </Nav>
             </Container>
-        </Navbar>        
+        </Navbar>
+
+        // <Navbar bg="dark" variant="dark" sticky="top">
+        //     <Container>
+        //         <Nav className="me-auto">
+        //             <Nav.Link href="/">JRF Burger Shop</Nav.Link>  
+        //             <Nav.Link href="/Customize">Make your own Burger</Nav.Link>
+        //             {/* <NavLink to="/">Home</NavLink> */}
+        //             <Nav.Link href="/">Home</Nav.Link>
+        //             <Nav.Link href="/cart">Cart</Nav.Link>
+        //         </Nav>
+        //     </Container>
+        // </Navbar>        
     )
 }
 export default NavBar
