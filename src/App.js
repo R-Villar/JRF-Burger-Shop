@@ -34,7 +34,7 @@ function App() {
         <NavBar />
         <Switch>
           <Route path="/cart">
-            <Cart />
+            <Cart addCustSelection={addCustSelection}/>
           </Route>
           <Route path="/customize">
             <Customize selectedBurger={selectedBurger} />

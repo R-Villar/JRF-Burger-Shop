@@ -19,7 +19,13 @@ function BurgerCard({burger, addCustSelection}) {
                 <Card.Title>{name}</Card.Title>
                     <Card.Text>{description}</Card.Text>
                     <Card.Text>${price}</Card.Text>
-                <Button variant="primary" size='sm'>add to cart</Button>{' '}
+                <Link to="/cart">
+                    <Button 
+                    variant="primary" 
+                    size='sm'
+                    onClick={selectedClick}>add to cart
+                    </Button>
+                </Link>    
                 <Link to="/customize">
                     <Button 
                         variant="primary" 
