@@ -15,21 +15,17 @@ function Customize ({newBurger, selectedBurger}) {
         e.preventDefault()
 
        
-        const newBurgerArray = [
+        const newBurger = 
             {
             id: Math.floor(Math.random() * 73457372),
             name,
             image,
             price,
             description,
-            ingredients: [
-                ingredients.ketchup,
-                ingredients.tomato,
-                ingredients.cheese
-            ] 
+            ingredients: Object.keys(ingredients)
             }
-        ]
-        console.log(newBurgerArray)
+        
+        console.log(newBurger)
         //newBurger(newBurgerArray)
     }
 
@@ -44,11 +40,6 @@ function Customize ({newBurger, selectedBurger}) {
             return newState
         })
     }
-    console.log([
-        ingredients.ketchup,
-        ingredients.tomato,
-        ingredients.cheese
-    ])
     return (
         <div>
             <form onSubmit={handleClick}>
