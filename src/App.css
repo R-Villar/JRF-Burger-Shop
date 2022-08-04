@@ -1,8 +1,6 @@
 .App {
   text-align: center;
 }
-
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -16,4 +14,13 @@
 
 .App-link {
   color: #61dafb;
+}
+img {
+  float: left;
+  width:  100px;
+  height: 200px;
+  object-fit: cover;
+}
+body{
+  background-image: url("https://assets.bonappetit.com/photos/5d1cb1880813410008e914fc/master/pass/Print-Summer-Smash-Burger.jpg");
 }
