@@ -48,20 +48,28 @@ function Customize ({newBurger, selectedBurger}) {
                 <input placeholder="image" onChange={(e) => setImage(e.target.value)}/>
                 <input type="number" min='01' placeholder="price"onChange={(e) => setPrice(e.target.value)}/>
                 <input placeholder="description" onChange={(e) => setDescription(e.target.value)}/>
-                <label htmlFor="ingredients">Choose Bun</label>
-                <select id="ingredients" name="ingredients" onClick={clickIngredients}>
-                    <option>Pick one..</option>
-                    <option name="Kaiser Roll">Kaiser Roll</option>
-                    <option name="Onion Roll">Onion Roll</option>
-                    <option name="Potato Roll">Potato Roll</option>          
-                </select>
                 <div>
-                    <label htmlFor="ketchup">ketchup</label>
-                    < input onClick={clickIngredients} type="checkbox" name="ketchup"/><br />
-                    <label htmlFor="tomato">tomato</label>
+                    <label htmlFor="ketchup">Ketchup</label>
+                    < input onClick={clickIngredients} type="checkbox" name="ketchup"/><br/>
+                    <label htmlFor="tomato">Tomato</label>
                     < input onClick={clickIngredients} type="checkbox" name="tomato"/><br/>
-                    <label htmlFor="cheese">cheese</label>
-                    < input onClick={clickIngredients} type="checkbox" name="cheese"/>
+                    <label htmlFor="cheese">Cheese</label>
+                    < input onClick={clickIngredients} type="checkbox" name="cheese"/><br/>
+                    <label htmlFor="Lettuce">Lettuce</label>
+                    < input onClick={clickIngredients} type="checkbox" name="Lettuce"/><br />
+                    <label htmlFor="Onion">Onion</label>
+                    < input onClick={clickIngredients} type="checkbox" name="onion"/><br />
+                    <label htmlFor="pickles">Pickles</label>
+                    < input onClick={clickIngredients} type="checkbox" name="pickles"/><br />
+                    <label htmlFor="Bacon">Bacon</label>
+                    < input onClick={clickIngredients} type="checkbox" name="bacon"/><br />
+                    <label htmlFor="Beef-patty">Beef patty</label>
+                    < input onClick={clickIngredients} type="checkbox" name="Beef-Patty"/><br />
+                    <label htmlFor="Chicken-patty">Chicken Patty</label>
+                    < input onClick={clickIngredients} type="checkbox" name="Chicken Patty"/><br />
+                    <label htmlFor="Vegan-Patty">Vegan patty</label>
+                    < input onClick={clickIngredients} type="checkbox" name="Vegan-Patty"/><br />
+
                 </div>
                 <input type="submit" value="Create"></input>
             </form>

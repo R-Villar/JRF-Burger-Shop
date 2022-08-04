@@ -1,6 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import {Link} from "react-router-dom"
+import { Alert } from 'react-bootstrap/Alert';
 
 
 function BurgerCard({burger, addCustSelection}) {
@@ -22,7 +23,8 @@ function BurgerCard({burger, addCustSelection}) {
                     <Button 
                     variant="primary" 
                     size='sm'
-                    onClick={selectedClick}>Add to cart
+                    onClick={selectedClick}
+                    >Add to cart    
                     </Button>{' '}
                 <Link to="/customize">
                     <Button 
