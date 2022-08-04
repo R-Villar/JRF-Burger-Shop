@@ -1,5 +1,5 @@
 import {useState} from "react"
-import { Button, Container, Row, Col, Image } from "react-bootstrap";
+import { Button, Container, Row, Col } from "react-bootstrap";
 
 function Cart ({selectedBurger}) {
     const [ cartItem, setCartItem ] = useState(selectedBurger)

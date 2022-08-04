@@ -5,6 +5,8 @@ import NavBar from './Components/NavBar';
 import Cart from './Components/Cart';
 import Customize from './Components/Customize';
 import React, { useEffect, useState } from "react";
+import background from "./Components/img/burger.jpg"
+
 
 function App() {
   const [burgersObj, setBurgersObj] = useState([])
@@ -32,7 +34,7 @@ function App() {
 
   
   return (
-      <div className="App">
+      <div className="App" style={{backgroundImage: `url(${background})`}}>
         <NavBar />
         <Switch>
           <Route path="/cart">
