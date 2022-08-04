@@ -5,7 +5,7 @@ import NavBar from './Components/NavBar';
 import Cart from './Components/Cart';
 import Customize from './Components/Customize';
 import React, { useEffect, useState } from "react";
-import background from "./Components/img/burger.jpg"
+
 
 
 function App() {
@@ -13,7 +13,6 @@ function App() {
   // adds burger to cart
   const [selectedBurger, setSelectedBurger] = useState([])
  
-
   // fetch request
   useEffect(() => {
     fetch('http://localhost:3000/burgers')
@@ -26,22 +25,20 @@ function App() {
     setBurgersObj( burgersObj => [...burgersObj, newObj ])
   }
 
-    
   // adds the selected burger to the cart
   function addCustSelection(addedBurger) {
     setSelectedBurger(prevAddedBurger => [...prevAddedBurger, addedBurger])
   }
 
-  
   return (
-      <div className="App" style={{backgroundImage: `url(${background})`}}>
+      <div className="App" >
         <NavBar />
         <Switch>
           <Route path="/cart">
             <Cart selectedBurger={selectedBurger}/>
           </Route>
           <Route path="/customize">
-            <Customize selectedBurger={selectedBurger} newBurger={newBurger} />
+            <Customize newBurger={newBurger} />
           </Route>
           <Route path="/">
             <Home addCustSelection={addCustSelection}

@@ -1,6 +1,7 @@
 import {useState} from "react"
 import { Button, Container, Row, Col } from "react-bootstrap";
 
+// look thru ths before presentation
 function Cart ({selectedBurger}) {
     const [ cartItem, setCartItem ] = useState(selectedBurger)
 
