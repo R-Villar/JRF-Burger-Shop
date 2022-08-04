@@ -1,14 +1,19 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import {Link} from "react-router-dom"
+import {useState} from "react"
 
 
 function BurgerCard({burger, addCustSelection}) {
     const {name, image, description, price} = burger
 
+    const [isClicked, setIsClicked] =useState()
+
     // click function to send information to the customize page
+    // Changes add to cart button when clicked to in cart
     function selectedClick() {
         addCustSelection(burger)
+        setIsClicked(isClicked => !isClicked)
     }
     
     // creates cards to display on the page.
@@ -22,7 +27,8 @@ function BurgerCard({burger, addCustSelection}) {
                     <Button 
                     variant="primary" 
                     size='sm'
-                    onClick={selectedClick}>Add to cart
+                    onClick={selectedClick}>
+                        { isClicked ? "In Cart" : "Add to cart"}
                     </Button>{' '}
                 <Link to="/customize">
                     <Button 
