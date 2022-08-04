@@ -2,31 +2,30 @@ import {useState} from "react"
 
 
 function Cart ({selectedBurger}) {
-    // const {price, name} = selectedBurger
     const [cartItem, setCartItem] = useState(selectedBurger)
-    
+
+
+    // adds the total price of the items
+    let totalPrice = cartItem.reduce(function(accumulator, item) {
+        return accumulator + item.price
+    }, 0)
+
     const cartB = cartItem.map((item) => {
-        let total =+ item.price
-        return <div key={item.id}>
-            <h4> {item.name}</h4>
-            <p>${item.price}</p>
-            <p>total = {total}</p>
+        const {name, price, id} = item
+         
+        return <div key={id}>
+            <h4> {name}</h4>
+            <p>${price}</p>
         </div>
     })
 
-    console.log(cartB)
-   
-    
-    
     return (
         <div>
             {cartB}
-
             <div>
-            {/* <p>Total = {total}</p> */}
+                <p>Total = {totalPrice}</p>
             </div>
         </div>
-        
     )
 }
 export default Cart
