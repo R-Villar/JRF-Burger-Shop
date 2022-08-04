@@ -3,8 +3,6 @@
     {
       "id": 0,
       "name": "Tribute Burger",
-      "restaurant": "Honest Burgers",
-      "web": "www.honestburgers.co.uk",
       "image": "https://lh6.googleusercontent.com/-tKESbckY77g/VLAVKj-3ROI/AAAAAAAAD2Y/-krHHXk_L4k/s640/blogger-image-1923598956.jpg",
       "price": 10.99,
       "description": "A mouth-watering honest beef burger",
@@ -16,23 +14,11 @@
         "pickes",
         "onion",
         "lettuce"
-      ],
-      "addresses": [
-        {
-          "addressId": 0,
-          "number": "75",
-          "line1": "Venn Street",
-          "line2": "Clapham",
-          "postcode": "SW4 0BD",
-          "country": "United Kingdom"
-        }
       ]
     },
     {
       "id": 1,
       "name": "Pulled Mooshie",
-      "restaurant": "Mooshies",
-      "web": "www.veganburger.org",
       "image": "https://media.timeout.com/images/103853569/image.jpg",
       "price": 12.99,
       "description": "Spicy vegan burger with jackfruit",
@@ -40,23 +26,11 @@
         "jackfruit",
         "coleslaw",
         "gluten free bun"
-      ],
-      "addresses": [
-        {
-          "addressId": 0,
-          "number": "104",
-          "line1": "Brick Lane",
-          "line2": "Shoreditch",
-          "postcode": "E1 6RL",
-          "country": "United Kingdom"
-        }
       ]
     },
     {
       "id": 2,
       "name": "Krabby Patty",
-      "restaurant": "Krusty Krab",
-      "web": "https://twitter.com/SpongeBob",
       "image": "https://i1.sndcdn.com/artworks-skob69hsTyYk99a8-zuJYJA-t500x500.jpg",
       "price": 2,
       "description": "The only people who don't like a Krabby Patty have never tasted one.",
@@ -71,23 +45,11 @@
         "cheese",
         "tomato",
         "bun"
-      ],
-      "addresses": [
-        {
-          "addressId": 0,
-          "number": "831",
-          "line1": "Bottom Feeder Lane",
-          "line2": "",
-          "postcode": "",
-          "country": "Bikini Bottom, Pacific Ocean"
-        }
       ]
     },
     {
       "id": 3,
       "name": "The Good Burger",
-      "restaurant": "Good Burger",
-      "web": "https://en.wikipedia.org/wiki/Good_Burger",
       "image": "http://static1.squarespace.com/static/5e9e6fa90f8d724ee6f6ebec/t/5e9eaf5df1cdfa38f241f565/1587457893588/2020-03-31-14.50.02-2.jpg?format=1500w",
       "price": 8.99,
       "description": "Welcome to Good Burger, home of the Good Burger, can I take your order?",
@@ -98,23 +60,11 @@
         "lettuce",
         "onions",
         "cheese"
-      ],
-      "addresses": [
-        {
-          "addressId": 0,
-          "number": "000",
-          "line1": "Good Burger",
-          "line2": "437 Glendora Ave.",
-          "postcode": "CA",
-          "country": "United States"
-        }
       ]
     },
     {
       "id": 4,
       "name": "Crunchy Nacho Burger",
-      "restaurant": "Max Burgers",
-      "web": "https://www.max.se/maten/meny/burgare/crunchy-nacho-burger/",
       "image": "https://www.max.se/contentassets/f6eff8ddf03441ac9ba3948ecff1fb04/burgers-gdl-crunchy-nacho-1.png",
       "price": 16.99,
       "description": "The best combination of crunchiness and softness, all in one single burger",
@@ -128,23 +78,11 @@
         "pickled onion",
         "lettuce",
         "jalapeño mayonnaise"
-      ],
-      "addresses": [
-        {
-          "addressId": 0,
-          "number": "48D",
-          "line1": "Skeppsbrogatan",
-          "line2": "Luleå",
-          "postcode": "971 25",
-          "country": "Sweden"
-        }
       ]
     },
     {
       "id": 5,
       "name": "Barbie Burger",
-      "restaurant": "Flower Burger",
-      "web": "https://www.flowerburger.it/",
       "image": "https://www.dissapore.com/wp-content/uploads/2020/11/FLOWER-BURGER5394-Modifica.jpg",
       "price": 5.99,
       "description": "From a pink explosion was born Barbie Burger, a special edition in partnership with Mattel",
@@ -155,23 +93,11 @@
         "gentilina salad",
         "barbie hummus",
         "barbie mayo"
-      ],
-      "addresses": [
-        {
-          "addressId": 0,
-          "number": "12",
-          "line1": "Porta Genova",
-          "line2": "Via Tortona",
-          "postcode": "20144",
-          "country": "Italy"
-        }
       ]
     },
     {
       "id": 6,
       "name": "Curry On My Wayward Bun",
-      "restaurant": "Bob's Burgers",
-      "web": "https://bobs-burgers.fandom.com/wiki/Burger_of_the_Day",
       "image": "https://runninginmyhead.files.wordpress.com/2017/07/burgeroftheday.jpg?w=750",
       "price": 5.95,
       "description": "She is a Super Leek Burger",
@@ -179,23 +105,11 @@
         "beef",
         "curry",
         "bun"
-      ],
-      "addresses": [
-        {
-          "addressId": 0,
-          "number": "0",
-          "line1": "Ocean Avenue",
-          "line2": "NJ",
-          "postcode": "08260",
-          "country": "United States"
-        }
       ]
     },
     {
       "id": 7,
       "name": "MEISTER ALLER KLASSEN",
-      "restaurant": "Burgermeister",
-      "web": "https://burger-meister.de",
       "image": "https://burger-meister.de/wp-content/uploads/2021/04/Burgermeister-Closeup.jpg",
       "price": 7.99,
       "description": "Fast food joint located in a public toilet? Why on earth?!",
@@ -205,31 +119,11 @@
         "bacon",
         "barbequesauce",
         "jalapenos"
-      ],
-      "addresses": [
-        {
-          "addressId": 0,
-          "number": "1",
-          "line1": "Potsdamer Platz",
-          "line2": "Berlin",
-          "postcode": "10785",
-          "country": "Germany"
-        },
-        {
-          "addressId": 1,
-          "number": "45",
-          "line1": "Eberswalder, Schönhauser Allee",
-          "line2": "Berlin",
-          "postcode": "10435",
-          "country": "Germany"
-        }
       ]
     },
     {
       "id": 8,
       "name": "Vegetarian Burger (Indian Style)",
-      "restaurant": "Indian Burgers",
-      "web": "https://www.cookwithmanali.com/vegetarian-burger-indian-style/",
       "image": "https://www.cookwithmanali.com/wp-content/uploads/2018/05/Vegetarian-Burger-Masala-Burger.jpg",
       "price": 12.99,
       "description": "With summer around the corner, I had to share a vegetarian burger recipe with you guys. Actually I plan to share more in the next month but I thought I will start with this Indian style Vegetarian Burger aka Masala Burger!",
@@ -240,23 +134,11 @@
         "pickes",
         "onion",
         "Veggies"
-      ],
-      "addresses": [
-        {
-          "addressId": 0,
-          "number": "007",
-          "line1": "Line1",
-          "line2": "Line2",
-          "postcode": "",
-          "country": "India"
-        }
       ]
     },
     {
       "id": 9,
       "name": "Fat Santa",
-      "restaurant": "Sky City Hamilton",
-      "web": "https://skycityhamilton.co.nz/eat-drink/eat-burger/",
       "image": "https://pbs.twimg.com/media/EFX0ZZzWsAAbouS?format=jpg&name=4096x4096",
       "price": 11.99,
       "description": "A Christmas themed burger",
@@ -268,23 +150,11 @@
         "lettuce",
         "tomato",
         "cranberry sauce"
-      ],
-      "addresses": [
-        {
-          "addressId": 0,
-          "number": "348",
-          "line1": "Victoria street",
-          "line2": "Hamilton Central, Hamilton",
-          "postcode": "3204",
-          "country": "New Zealand"
-        }
       ]
     },
     {
       "id": 10,
       "name": "Blondie",
-      "restaurant": "Yankys",
-      "web": "http://yankyslambton.co.za/menu/",
       "image": "https://nypost.com/wp-content/uploads/sites/2/2016/03/food1.jpg?quality=75&strip=all",
       "price": 14.99,
       "description": "Delicious steak burger",
@@ -298,16 +168,6 @@
         "tomato",
         "onion",
         "gerkins"
-      ],
-      "addresses": [
-        {
-          "addressId": 0,
-          "number": "114",
-          "line1": "Webber Road",
-          "line2": "Lambton, Germiston",
-          "postcode": "1414",
-          "country": "South Africa"
-        }
       ]
     }
   ]
