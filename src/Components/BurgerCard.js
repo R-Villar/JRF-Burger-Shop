@@ -20,7 +20,7 @@ function BurgerCard({burger, addCustSelection}) {
     
     // creates cards to display on the page.
     return (
-        <Card style={{ width: '18rem' }}>
+        <Card className="col-sm-7 mb-5" border="info" style={{ width: '18rem' }}>
             <Card.Img variant="top" src={image} />
             <Card.Body>
                 <Card.Title>{name}</Card.Title>
