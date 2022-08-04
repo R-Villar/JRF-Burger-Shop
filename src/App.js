@@ -34,7 +34,7 @@ function App() {
 
   
   return (
-      <div className="App" style={{backgroundImage: `url(${background})`}}>
+      <div className="App">
         <NavBar />
         <Switch>
           <Route path="/cart">

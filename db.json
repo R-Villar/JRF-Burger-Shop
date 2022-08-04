@@ -5,7 +5,7 @@
       "name": "Tribute Burger",
       "image": "https://lh6.googleusercontent.com/-tKESbckY77g/VLAVKj-3ROI/AAAAAAAAD2Y/-krHHXk_L4k/s640/blogger-image-1923598956.jpg",
       "price": 10.99,
-      "description": "A mouth-watering honest beef burger",
+      "description": "A mouth-watering beef burger that comes with a slice of yellow cheese and bacon",
       "ingredients": [
         "beef",
         "american cheese",
@@ -21,7 +21,7 @@
       "name": "Pulled Mooshie",
       "image": "https://media.timeout.com/images/103853569/image.jpg",
       "price": 12.99,
-      "description": "Spicy vegan burger with jackfruit",
+      "description": "Spicy vegan burger slow cooked mixed with our vegan BBQ and jackfruit",
       "ingredients": [
         "jackfruit",
         "coleslaw",
@@ -100,7 +100,7 @@
       "name": "Curry On My Wayward Bun",
       "image": "https://runninginmyhead.files.wordpress.com/2017/07/burgeroftheday.jpg?w=750",
       "price": 5.95,
-      "description": "She is a Super Leek Burger",
+      "description": "Burger seasoned with curry powder, salt, and pepper",
       "ingredients": [
         "beef",
         "curry",
@@ -126,7 +126,7 @@
       "name": "Vegetarian Burger (Indian Style)",
       "image": "https://www.cookwithmanali.com/wp-content/uploads/2018/05/Vegetarian-Burger-Masala-Burger.jpg",
       "price": 12.99,
-      "description": "With summer around the corner, I had to share a vegetarian burger recipe with you guys. Actually I plan to share more in the next month but I thought I will start with this Indian style Vegetarian Burger aka Masala Burger!",
+      "description": "Indian style Vegetarian Burgers spiced with garam masala & cumin! These masala burgers are so flavorful and would be the perfect burgers for summer BBQ and grilling menu!",
       "ingredients": [
         "american cheese",
         "burger sauce",
@@ -141,7 +141,7 @@
       "name": "Fat Santa",
       "image": "https://pbs.twimg.com/media/EFX0ZZzWsAAbouS?format=jpg&name=4096x4096",
       "price": 11.99,
-      "description": "A Christmas themed burger",
+      "description": "A Christmas themed burger, with our perfectly seasoned chicken mixed with champagne ham and our super fresh ingredients and vegetables that can fullfill the most exquisite palate",
       "ingredients": [
         "chicken thigh",
         "champagne ham",
@@ -157,7 +157,7 @@
       "name": "Blondie",
       "image": "https://nypost.com/wp-content/uploads/sites/2/2016/03/food1.jpg?quality=75&strip=all",
       "price": 14.99,
-      "description": "Delicious steak burger",
+      "description": "Delicious steak burger, served fresh, fast, and from meat delivered daily mixed with out secret BBQ sauce and fresh cooked ingredients that will blow your mind and your mouth!",
       "ingredients": [
         "steak",
         "BBQ sauce",
