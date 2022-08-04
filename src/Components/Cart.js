@@ -1,20 +1,32 @@
-function Cart ({addCustSelection}) {
+import {useState} from "react"
+
+
+function Cart ({selectedBurger}) {
+    // const {price, name} = selectedBurger
+    const [cartItem, setCartItem] = useState(selectedBurger)
     
-    const paid = (e) => {
-        e.preventDefault()
-        alert('On its wait, thank you for your purchase')
-    }
+    const cartB = cartItem.map((item) => {
+        let total =+ item.price
+        return <div key={item.id}>
+            <h4> {item.name}</h4>
+            <p>${item.price}</p>
+            <p>total = {total}</p>
+        </div>
+    })
+
+    console.log(cartB)
+   
+    
     
     return (
-        <div>   
-            <form onSubmit={paid}>
-                <input placeholder="Name on the card"></input>
-                <input id="ccn" type="tel" inputMode="numeric" pattern="[0-9\s]{13,19}" autoComplete="cc-number" maxLength="19" placeholder="xxxx xxxx xxxx xxxx"></input>
-                <input type="month" placeholder="Exp. Date"></input>
-                <input placeholder="CCV"></input>
-                <input type="submit"></input>
-            </form>
+        <div>
+            {cartB}
+
+            <div>
+            {/* <p>Total = {total}</p> */}
+            </div>
         </div>
+        
     )
 }
 export default Cart

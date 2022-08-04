@@ -6,7 +6,7 @@ import {Link} from "react-router-dom"
 function BurgerCard({burger, addCustSelection}) {
     const {name, image, description, price} = burger
 
-    // click funtion to send information to the customize page
+    // click function to send information to the customize page
     function selectedClick() {
         addCustSelection(burger)
     }
@@ -19,18 +19,16 @@ function BurgerCard({burger, addCustSelection}) {
                 <Card.Title>{name}</Card.Title>
                     <Card.Text>{description}</Card.Text>
                     <Card.Text>${price}</Card.Text>
-                <Link to="/cart">
                     <Button 
                     variant="primary" 
                     size='sm'
-                    onClick={selectedClick}>add to cart
-                    </Button>
-                </Link>    
+                    onClick={selectedClick}>Add to cart
+                    </Button>{' '}
                 <Link to="/customize">
                     <Button 
                         variant="primary" 
                         size='sm' 
-                        onClick={selectedClick}>customize
+                        onClick={selectedClick}>Create your own
                     </Button>
                 </Link>
             </Card.Body>

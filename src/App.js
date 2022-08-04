@@ -7,33 +7,36 @@ import Customize from './Components/Customize';
 import React, { useEffect, useState } from "react";
 
 function App() {
-  const [selectedBurger, setSelectedBurger] = useState({})
   const [burgersObj, setBurgersObj] = useState([])
+  // adds burger to cart
+  const [selectedBurger, setSelectedBurger] = useState([])
+ 
 
-    // fetch request
-    useEffect(() => {
-      fetch('http://localhost:3000/burgers')
-        .then(res => res.json())
-        .then(data => setBurgersObj(data))
-    }, [])
+  // fetch request
+  useEffect(() => {
+    fetch('http://localhost:3000/burgers')
+      .then(res => res.json())
+      .then(data => setBurgersObj(data))
+  }, [])
 
-
-    const newBurger = newObj => {
-      setBurgersObj( burgersObj => [...burgersObj, newObj ])
-    }
-  // console.log(burgersObj)
-    
-  // adds the lected customized burger to the customize page
-  function addCustSelection(addedBurger) {
-    setSelectedBurger(addedBurger)
+  // creates a new obj with the form created burger
+  const newBurger = newObj => {
+    setBurgersObj( burgersObj => [...burgersObj, newObj ])
   }
+
+    
+  // adds the selected burger to the cart
+  function addCustSelection(addedBurger) {
+    setSelectedBurger(prevAddedBurger => [...prevAddedBurger, addedBurger])
+  }
+
   
   return (
       <div className="App">
         <NavBar />
         <Switch>
           <Route path="/cart">
-            <Cart addCustSelection={addCustSelection}/>
+            <Cart selectedBurger={selectedBurger}/>
           </Route>
           <Route path="/customize">
             <Customize selectedBurger={selectedBurger} newBurger={newBurger} />
