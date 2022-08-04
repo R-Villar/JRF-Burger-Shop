@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-
+// if not used at the end of day remove selectedBurger prop
 function Customize ({newBurger, selectedBurger}) {
    
     const [name, setName] = useState('')
@@ -11,7 +11,7 @@ function Customize ({newBurger, selectedBurger}) {
     const handleClick = (e) => {
         e.preventDefault()
         
-    
+    // console.log(selectedBurger)
         fetch('http://localhost:3000/burgers', {
             method: 'POST',
             headers: {
