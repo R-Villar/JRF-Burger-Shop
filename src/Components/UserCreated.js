@@ -14,7 +14,7 @@ function UserCreated({newBurger}) {
     const [ingredients, setIngredients] = useState([])
     const [validated, setValidated] = useState(false)
 
-    // submitclick for the form
+    // submit click for the form
     const handleClick = (event) => {
 
         // text validation for the form
