@@ -1,7 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import {Link} from "react-router-dom"
-
 import {useState} from "react"
 
 
@@ -21,7 +20,7 @@ function BurgerCard({burger, addCustSelection}) {
     // creates cards to display on the page.
     return (
         <Card className="col-sm-7 mb-5" border="info" style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={image} />
+            <Card.Img className="home-card" variant="top" src={image} />
             <Card.Body>
                 <Card.Title>{name}</Card.Title>
                     <Card.Text>{description}</Card.Text>
@@ -33,7 +32,7 @@ function BurgerCard({burger, addCustSelection}) {
                         { isClicked ? "In Cart" : "Add to cart"}
 
                     </Button>{' '}
-                <Link to="/customize">
+                <Link to="/user-created">
                     <Button 
                         variant="primary" 
                         size='sm' 
