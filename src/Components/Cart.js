@@ -3,7 +3,6 @@ import { Button, Container, Row, Col } from "react-bootstrap"
 import Alert from 'react-bootstrap/Alert'
 import AlertImg from "./image/spon.gif"
 
-// look thru ths before presentation
 function Cart ({selectedBurger}) {
     const [ cartItems, setCartItems ] = useState(selectedBurger)
     const [show, setShow] = useState(false)
