@@ -22,13 +22,12 @@ function Cart ({selectedBurger}) {
          
         return <Container key={id}>
                     <Row>
-                        <Col
-                            sm={4} >
-                                <img 
-                                    width={100}
+                        <Col sm={4} >
+                                <img width={100}
                                     height={100}
                                     src={image}
-                                    alt={name}/>
+                                    alt={name}
+                                />
                         </Col>
                         <Col sm={4}><h4>{name}</h4></Col>
                         <Col sm={3}>
