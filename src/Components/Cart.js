@@ -1,9 +1,24 @@
 import {useState} from "react"
-import { Button, Container, Row, Col } from "react-bootstrap";
+import { Button, Container, Row, Col } from "react-bootstrap"
+import Alert from 'react-bootstrap/Alert'
+import AlertImg from "./image/spon.gif"
 
 // look thru ths before presentation
 function Cart ({selectedBurger}) {
     const [ cartItems, setCartItems ] = useState(selectedBurger)
+    const [show, setShow] = useState(false)
+
+    // order placed message
+    if (show) {
+        return (
+          <Alert variant="success" onClose={() => setShow(false)} dismissible>
+            <Alert.Heading>it's burger o'clock, Oh snap! did you pay us?!</Alert.Heading>
+            <p>
+              Your order has been place to your <img alt="place" width={150} height={100} src={AlertImg} />. Come again soon.
+            </p>
+          </Alert>
+        );
+      }
 
     // adds the total price of the items
     let totalPrice = cartItems.reduce(function(accumulator, item) {
@@ -11,7 +26,7 @@ function Cart ({selectedBurger}) {
     }, 0)
 
     // maps thru the cart items
-    const cartB = cartItems.map((item) => {
+    const inCartItems = cartItems.map((item) => {
         const {name, price, id, image} = item
 
         // removes items from cart
@@ -46,7 +61,7 @@ function Cart ({selectedBurger}) {
         <div className="cart-card">
             <Container> 
                     <div>
-                        {cartB}
+                        {inCartItems}
                     </div>
                 <div>
                     <Row>
@@ -54,7 +69,7 @@ function Cart ({selectedBurger}) {
                         <Col xs={6}>
                             <strong><h3>{totalPrice.toFixed(2)}</h3></strong> 
                         </Col>
-                        <Col><Button>Pay Now</Button></Col>
+                        <Col><Button onClick={() => setShow(true)} >Pay Now</Button></Col>
                     </Row>
                 </div>
             </Container>
