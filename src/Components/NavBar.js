@@ -8,8 +8,7 @@ function NavBar() {
     return (
         <Navbar bg="dark" variant="dark" sticky="top">
             <Container>
-                <Nav className="me-auto">       
-                    <Nav.Link as={NavLink} to="/">JRF Burger Shop</Nav.Link>
+                <Nav className="me-auto">
                     <Nav.Link as={NavLink} to="/">Home</Nav.Link>
                     <Nav.Link as={NavLink} to="/user-created">Create Your Own</Nav.Link>    
                     <Nav.Link as={NavLink} to="/cart">Cart</Nav.Link>
