@@ -1,6 +1,7 @@
 .App {
   text-align: center;
 }
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -12,15 +13,26 @@
   color: white;
 }
 
+.cart-card {
+  margin-left: 100px;
+  margin-top: 10px;
+  width: 50;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 2em;
+  background-color: #e8e6e1;
+}
+
 .App-link {
   color: #61dafb;
 }
-img {
+
+.home-card {
   float: left;
   width:  100px;
   height: 200px;
   object-fit: cover;
 }
+
 body{
   background-image: url("https://assets.bonappetit.com/photos/5d1cb1880813410008e914fc/master/pass/Print-Summer-Smash-Burger.jpg");
 }

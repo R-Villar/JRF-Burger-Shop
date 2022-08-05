@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 
 
-function Customize ({newBurger}) {
+function UserCreated({newBurger}) {
    
     const [name, setName] = useState('')
     const [image, setImage] = useState('')
@@ -216,4 +216,5 @@ function Customize ({newBurger}) {
         </Form>
         )    
 }
-export default Customize
+
+export default UserCreated
