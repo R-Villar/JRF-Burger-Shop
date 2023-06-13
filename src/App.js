@@ -1,9 +1,9 @@
 import "./App.css";
-import {Route, Switch} from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Home from "./Components/Home";
 import NavBar from "./Components/NavBar";
 import Cart from "./Components/Cart";
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import UserCreated from "./Components/UserCreated";
 import Header from "./Components/Header";
 
@@ -26,10 +26,7 @@ function App() {
 
 	// adds the selected burger to the cart
 	function addCustSelection(addedBurger) {
-		setSelectedBurger((prevAddedBurger) => [
-			...prevAddedBurger,
-			addedBurger,
-		]);
+		setSelectedBurger((prevAddedBurger) => [...prevAddedBurger, addedBurger]);
 	}
 
 	return (
@@ -44,10 +41,7 @@ function App() {
 					<UserCreated newBurger={newBurger} />
 				</Route>
 				<Route path='/'>
-					<Home
-						addCustSelection={addCustSelection}
-						burgersObj={burgersObj}
-					/>
+					<Home addCustSelection={addCustSelection} burgersObj={burgersObj} />
 				</Route>
 			</Switch>
 		</div>

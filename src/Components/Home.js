@@ -1,12 +1,9 @@
 import CardContainer from "./Cardcontainter";
 
-function Home({addCustSelection, burgersObj}) {
+function Home({ addCustSelection, burgersObj }) {
 	return (
 		<div>
-			<CardContainer
-				burgersObj={burgersObj}
-				addCustSelection={addCustSelection}
-			/>
+			<CardContainer burgersObj={burgersObj} addCustSelection={addCustSelection} />
 		</div>
 	);
 }

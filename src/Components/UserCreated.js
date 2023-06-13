@@ -1,10 +1,10 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import RadioForm from "./RadioForm";
 
-function UserCreated({newBurger}) {
+function UserCreated({ newBurger }) {
 	const [name, setName] = useState("");
 	const [image, setImage] = useState("");
 	const [price, setPrice] = useState("");
@@ -45,7 +45,7 @@ function UserCreated({newBurger}) {
 	// creates array of ingredients, function is also passed to RadioForm
 	const clickIngredients = (e) => {
 		setIngredients((previousState) => {
-			const newState = {...previousState};
+			const newState = { ...previousState };
 			if (newState[e.target.name]) {
 				delete newState[e.target.name];
 			} else {
@@ -57,11 +57,7 @@ function UserCreated({newBurger}) {
 	return (
 		// form for the page
 		<Form noValidate validated={validated} onSubmit={handleClick}>
-			<Form.Group
-				as={Row}
-				className='mb-3'
-				controlId='valiadationCustomName'
-			>
+			<Form.Group as={Row} className='mb-3' controlId='valiadationCustomName'>
 				<Form.Label column sm={2}>
 					<strong>Name</strong>
 				</Form.Label>
@@ -77,30 +73,18 @@ function UserCreated({newBurger}) {
 				</Col>
 			</Form.Group>
 
-			<Form.Group
-				as={Row}
-				className='mb-3'
-				controlId='valiadationCustomImage'
-			>
+			<Form.Group as={Row} className='mb-3' controlId='valiadationCustomImage'>
 				<Form.Label column sm={2}>
 					<strong>Image</strong>
 				</Form.Label>
 				<Col sm={5}>
 					{/* user input for image */}
-					<Form.Control
-						required
-						placeholder='Image'
-						onChange={(e) => setImage(e.target.value)}
-					/>
+					<Form.Control required placeholder='Image' onChange={(e) => setImage(e.target.value)} />
 					<Form.Control.Feedback>Looks Good!</Form.Control.Feedback>
 				</Col>
 			</Form.Group>
 
-			<Form.Group
-				as={Row}
-				className='mb-3'
-				controlId='FormHorizontalPrice'
-			>
+			<Form.Group as={Row} className='mb-3' controlId='FormHorizontalPrice'>
 				<Form.Label column sm={2}>
 					<strong>Price</strong>
 				</Form.Label>
@@ -117,11 +101,7 @@ function UserCreated({newBurger}) {
 				</Col>
 			</Form.Group>
 
-			<Form.Group
-				as={Row}
-				className='mb-3'
-				controlId='FormHorizontalPrice'
-			>
+			<Form.Group as={Row} className='mb-3' controlId='FormHorizontalPrice'>
 				<Form.Label column sm={2}>
 					<strong>Description</strong>
 				</Form.Label>
