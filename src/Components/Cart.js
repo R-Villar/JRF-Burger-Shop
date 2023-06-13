@@ -1,9 +1,9 @@
-import {useState} from "react";
-import {Button, Container, Row, Col} from "react-bootstrap";
+import { useState } from "react";
+import { Button, Container, Row, Col } from "react-bootstrap";
 import Alert from "react-bootstrap/Alert";
 import AlertImg from "./image/spon.gif";
 
-function Cart({selectedBurger}) {
+function Cart({ selectedBurger }) {
 	const [cartItems, setCartItems] = useState(selectedBurger);
 	const [show, setShow] = useState(false);
 
@@ -11,13 +11,10 @@ function Cart({selectedBurger}) {
 	if (show) {
 		return (
 			<Alert variant='success' onClose={() => setShow(false)} dismissible>
-				<Alert.Heading>
-					it's burger o'clock, Oh snap! did you pay us?!
-				</Alert.Heading>
+				<Alert.Heading>it's burger o'clock, Oh snap! did you pay us?!</Alert.Heading>
 				<p>
 					Your order has been place to your{" "}
-					<img alt='place' width={150} height={100} src={AlertImg} />.
-					Come again soon.
+					<img alt='place' width={150} height={100} src={AlertImg} />. Come again soon.
 				</p>
 			</Alert>
 		);
@@ -30,13 +27,11 @@ function Cart({selectedBurger}) {
 
 	// maps thru the cart items
 	const inCartItems = cartItems.map((item) => {
-		const {name, price, id, image} = item;
+		const { name, price, id, image } = item;
 
 		// removes items from cart
 		function handleClick() {
-			const removeFromCart = cartItems.filter(
-				(cartItem) => cartItem.id !== id
-			);
+			const removeFromCart = cartItems.filter((cartItem) => cartItem.id !== id);
 			setCartItems(removeFromCart);
 		}
 
@@ -75,9 +70,7 @@ function Cart({selectedBurger}) {
 							</strong>
 						</Col>
 						<Col>
-							<Button onClick={() => setShow(true)}>
-								Pay Now
-							</Button>
+							<Button onClick={() => setShow(true)}>Pay Now</Button>
 						</Col>
 					</Row>
 				</div>
