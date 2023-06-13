@@ -1,11 +1,12 @@
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-import {Link} from "react-router-dom";
-import {useState} from "react";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import { v4 as uuidv4 } from 'uuid';
 import Collapse from "react-bootstrap/Collapse";
 
-function BurgerCard({burger, addCustSelection}) {
-	const {name, image, description, price, ingredients} = burger;
+function BurgerCard({ burger, addCustSelection }) {
+	const { name, image, description, price, ingredients } = burger;
 
 	const [isClicked, setIsClicked] = useState();
 	const [display, setDisplay] = useState(false);
@@ -19,12 +20,12 @@ function BurgerCard({burger, addCustSelection}) {
 
 	// list of ingredients
 	const listOfIngredients = ingredients.map((ingredient) => {
-		return <li key={ingredient}>{ingredient}</li>;
+		return <li key={uuidv4()}>{ingredient}</li>;
 	});
 
 	// creates cards to display on the page.
 	return (
-		<Card className='col-sm-7 mb-5' border='info' style={{width: "18rem"}}>
+		<Card className='col-sm-7 mb-5' border='info' style={{ width: "18rem" }}>
 			<Card.Img className='home-card' variant='top' src={image} />
 			<Card.Body>
 				<Card.Title>{name}</Card.Title>
