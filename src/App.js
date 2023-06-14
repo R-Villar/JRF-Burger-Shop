@@ -14,7 +14,7 @@ function App() {
 
 	// fetch request
 	useEffect(() => {
-		fetch(`https://jrf-burger-shop-git-main-r-villar.vercel.app/burgers`)
+		fetch("http://localhost:3000/burgers")
 			.then((res) => res.json())
 			.then((data) => setBurgersObj(data));
 	}, []);
